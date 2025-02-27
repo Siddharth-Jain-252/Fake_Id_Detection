@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fake Account Detector</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+
+    <!-- Dark Overlay -->
+    <div class="overlay"></div>
+
+    <div class="container">
+        <h1>🔍 AI-Powered Fake Account Detector</h1>
+        <p>Enter a username to analyze social media account authenticity.</p>
+
+        <div class="input-group">
+            <label>👤 Username:</label>
+            <input type="text" id="username" placeholder="Enter username">
+        </div>
+
+        <button onclick="fetchDetails()">🔍 Check Account</button>
+
+        <div class="loading" id="loading"></div>
+
+        <div id="result-card" class="hidden">
+            <p><span id="fake"></span></p>
+        </div>
+    </div>
+
+    <script src="/static/script.js"></script>
+
+</body>
+</html>
