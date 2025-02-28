@@ -6,7 +6,7 @@ async function fetchDetails() {
     document.getElementById("result-card").style.display = "none";
 
     try {
-        let response = await fetch(`http://127.0.0.1:5000/get_details?username=${username}`);
+        let response = await fetch(`https://fake-id-detection-3.onrender.com/get_details?username=${username}`);
         let data = await response.json();
 
         document.getElementById("loading").style.display = "none";
