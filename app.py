@@ -5,7 +5,7 @@ import pandas as pd
 import pickle
 
 app = Flask(__name__)
-CORS(app,resources={r"/get_details": {"origins": "*"}})  # Enable Cross-Origin Requests (needed for JavaScript fetch)
+CORS(app,resources={r"/get_details": {"origins": "https://fake-id-detection-3.onrender.com"}})  # Enable Cross-Origin Requests (needed for JavaScript fetch)
 
 # Load ML model
 
